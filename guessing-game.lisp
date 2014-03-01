@@ -10,5 +10,11 @@
     (guess-my-number)
 )
 
+(defun bigger()
+    (setf *small* (1+ (guess-my-number)))
+    (guess-my-number)
+)
+
 (print(guess-my-number))
+(print(bigger))
 (print(smaller))
